@@ -45,25 +45,35 @@ function Content() {
     <article className="content">
       <div className="content__container">  
         <div className="content__cardsStart">   
-          <h1>Entradas:</h1>
+          <h1 className="content__tableTitle">Entradas</h1>
             <>
             { data.map( dado => (dado.operacao === "entrada" ? 
-            <div className="content__card"> 
-              <div> { dado.empresa } </div>
-              <div> { dado.valor }</div>
-            </div> : ''))}
+            <table className="content__table"> 
+              <tr>
+                <tr> Doador: { dado.empresa } </tr>
+              </tr>
+              <tr>
+                <td> Valor: { dado.valor } </td>
+              </tr>
+              
+            </table> : ''))}
             </>
-            <h2>Valor Total: { entry }</h2>
+            <h2 className="content__totalValue">Valor Total: { entry }</h2>
         </div>
 
         <div className="content__cardsEnd">
+          <h1 className="content__tableTitle"> Saidas </h1>
           <>
             { data.map(dado => (dado.operacao === "saida" ? 
-            <div className="content__card">
-              <div> { dado.empresa }</div>
-              <div> { dado.valor }</div>
-            </div> : ''))}
-            <h1>Valor Total: { exit }</h1>
+            <table className="content__table">
+              <tr>
+                <td>  { dado.empresa } </td>
+              </tr>
+              <tr>
+                <td> Valor: { dado.valor } </td>
+              </tr>
+            </table> : ''))}
+            <h2 className="content__totalValue">Valor Total: { exit }</h2>
           </>
         </div>
       </div>
