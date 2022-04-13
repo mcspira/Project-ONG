@@ -63,7 +63,7 @@ function Content() {
               <div> { dado.empresa }</div>
               <div> { dado.valor }</div>
             </div> : ''))}
-            <h1>Valor Total: { exit }</h1>Entrada
+            <h1>Valor Total: { exit }</h1>
           </>
         </div>
       </div>

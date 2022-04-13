@@ -1,0 +1,112 @@
+.footer {
+    height: 250px;
+    background-color: rgb(32, 35, 35, 1);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__container {
+    height: 90%;
+    max-width: 2040px;
+    min-width: 1040px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo img{
+    width: 220px;
+    margin-right: 35px;
+}
+
+.footer__info h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer__info p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-top: 9px;
+}
+
+.footer__info a {
+    text-decoration: none;
+    color: rgb(180, 234, 243);
+}
+
+.footer__nav ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0 0 0;
+}
+
+.footer__nav li {
+    margin-right: 20px;
+    background-color:rgba(18, 20, 20, 0.73);
+    padding: 8px;
+    border-radius: 4px;
+    border: 0.3px solid rgb(50, 50, 50);
+}
+
+.footer__icon {
+    color: white;
+    box-sizing: content-box;
+}
+.icon__facebook:hover {
+    color: rgb(63, 72, 244);
+    transition: 200ms;
+}
+
+.icon__instagram:hover {
+    color: rgb(175, 13, 175);
+    transition: 200ms;
+}
+
+.icon__linkedin:hover {
+    color: rgb(80, 147, 192);
+    transition: 200ms;
+}
+
+.icon__youtube:hover {
+    color: red;
+    transition: 200ms;
+}
+
+.footer__dev {
+    background-color: rgb(18, 20, 20);
+    height: 22px;
+    font-size: 14px;
+}
+
+.footer__devCont {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1040px;
+    align-items: center;
+}
+
+.footer__contact {
+    display: flex;
+}
+
+.footer__contact a {
+    margin-right: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__contact a:hover {
+    color: rgb(180, 234, 243);
+    transition: 200ms;
+}
+
